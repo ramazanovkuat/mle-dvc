@@ -16,7 +16,8 @@ stages:
       - index_col
       - target_col
       - one_hot_drop
-      - auto_class_weights
+      - logistic_regression_c
+      - logistic_regression_penalty
     outs:
       - models/fitted_model.pkl
   evaluate_model:
